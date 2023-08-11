@@ -1,8 +1,28 @@
-function saludar(name, edad) {
+function saludar(name, edad,genre) {
   if (edad > 18) {
-    return "Buenas días " + name;
+    if(genre=="M"){
+      return "Buenas días señor " + name;
+    }
+    else{
+      if(genre=="F"){
+        return "Buenas días señora " + name;
+      }
+      else{
+        return "Buenas días " + name;
+      }
+    }
   } else {
-    return "Hola " + name;
+    if(genre=="M"){
+      return "Buenas días joven " + name;
+    }
+    else{
+      if(genre=="F"){
+        return "Buenas días señorita " + name;
+      }
+      else{
+        return "Buenas días " + name;
+      }
+    }
   }
 }
 
