@@ -6,9 +6,10 @@ const name = document.querySelector("#nombre");
 const edad = document.querySelector("#edad");
 const genre = document.querySelector("#genero");
 const leng = document.querySelector("#idioma");
+const time = document.querySelector("#tiempo");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  div.innerHTML = "<p>" + saludar(name.value,edad.value,genre.value,leng.value) + "</p>";
+  div.innerHTML = "<p>" + saludar(name.value,edad.value,genre.value,leng.value,time.value) + "</p>";
 });
