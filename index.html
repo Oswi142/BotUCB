@@ -1,21 +1,32 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>UCB</title>
+</head>
   <body>
     <h1>Universidad Católica Boliviana</h1>
     <form id="saludar-form">
       <label for="nombre">Nombre:</label>
       <input type="text" id="nombre" />
+      <br>
       <label for="edad">Edad:</label>
       <input type="text" id="edad" />
+      <br>
       <label for="genero">Genero:</label>
       <input type="text" id="genero" />
+      <br>
       <label for="idioma">Idioma:</label>
       <input type="text" id="idioma" />
+      <br>
       <label for="tiempo">Momento del día:</label>
       <input type="text" id="tiempo" />
+      <br>
       <input type="submit" value="Saludar" id="saludar-button" />
     </form>
     <div id="saludo-div"></div>
-
     <script type="module" src="./src/presenter.js"></script>
   </body>
 </html>
